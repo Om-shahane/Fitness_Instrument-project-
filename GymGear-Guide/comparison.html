@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare Gym Equipment Side by Side | GymGear Guide</title>
+<meta name="description" content="Compare gym equipment by approximate price in India, purpose, muscles worked, space needed, home or commercial use, beginner suitability and maintenance.">
+<meta name="theme-color" content="#000000">
+<!-- When your final domain is known, add: <link rel="canonical" href="https://YOUR-DOMAIN/THIS-PAGE.html"> -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="comparison">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="GymGear Guide home"><img class="brand-logo" src="assets/logo.png" alt="Infinity Fitness logo" width="248" height="176"></a>
+    <nav id="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="price-guide.html">Price Guide</a></li><li><a href="comparison.html" aria-current="page">Compare</a></li><li><a href="articles.html">Learn</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container"><h1>Compare Gym Equipment</h1><p>Put up to four items side by side: price, purpose, muscles, space, suitability and upkeep.</p></div></section>
+<section class="section section-light">
+  <div class="container">
+    <div class="picker">
+      <div class="field"><label for="compare-select">Add equipment</label>
+        <select id="compare-select"><option value="">Choose equipment to add</option></select></div>
+      <button type="button" class="btn btn-primary" id="compare-add">Add to comparison</button>
+      <button type="button" class="btn btn-ghost" id="compare-clear" hidden>Clear all</button>
+    </div>
+    <ul class="chips" id="compare-chips" aria-label="Selected equipment"></ul>
+    <div class="presets" id="compare-presets"><span>Quick comparisons:</span>
+      <button type="button" class="btn btn-ghost" data-ids="treadmill,exercise-bike">Treadmill vs exercise bike</button>
+      <button type="button" class="btn btn-ghost" data-ids="dumbbells,barbells">Dumbbells vs barbells</button>
+      <button type="button" class="btn btn-ghost" data-ids="smith-machine,squat-rack">Smith machine vs squat rack</button>
+      <button type="button" class="btn btn-ghost" data-ids="lat-pulldown-machine,pull-up-bar">Lat pulldown vs pull-up bar</button>
+    </div>
+    <div id="compare-output" aria-live="polite"><noscript><p>The comparison tool needs JavaScript.</p></noscript></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="brand" style="margin-bottom:.6em"><img class="brand-logo" src="assets/logo.png" alt="Infinity Fitness logo" width="248" height="176"></p>
+        <p>Your Complete Guide to Gym Equipment. Independent, educational information about gym instruments and approximate prices in India.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="equipment.html">All equipment</a></li>
+          <li><a href="price-guide.html">Price guide</a></li>
+          <li><a href="comparison.html">Compare equipment</a></li>
+          <li><a href="articles.html">Knowledge articles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="equipment.html?cat=cardio">Cardio equipment</a></li>
+          <li><a href="equipment.html?cat=strength">Strength machines</a></li>
+          <li><a href="equipment.html?cat=free-weights">Free weights</a></li>
+          <li><a href="equipment.html?cat=functional">Functional training</a></li>
+          <li><a href="equipment.html?cat=accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="contact.html">Contact form</a></li>
+          <li>Email: hello@gymgearguide.example</li>
+          <li><a href="about.html">About this site</a></li>
+        </ul>
+        <p class="fineprint" style="color:#bdbdbd">The email address above is a placeholder. Replace it with your own before publishing.</p>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>All prices are approximate ranges in Indian rupees and are not live market prices. Verify with current manufacturers or sellers.</p>
+      <p>Content is for general education, not medical or personal training advice. &copy; <span data-year>2026</span> GymGear Guide.</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-top" id="back-top" aria-label="Back to top">&uarr;</button>
+<script src="js/equipment-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/comparison.js"></script>
+</body>
+</html>

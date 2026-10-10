@@ -1,0 +1,38 @@
+/* GymGear Guide - responsive layout (loaded after style.css) */
+
+@media (max-width: 1080px) {
+  .filter-grid { grid-template-columns: repeat(2, 1fr); }
+  .filter-grid .field-search { grid-column: 1 / -1; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 880px) {
+  .nav-toggle { display: inline-block; }
+  .nav-list { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; background: var(--black); padding: 8px 20px 18px; border-bottom: 3px solid var(--orange); }
+  #site-nav.open .nav-list { display: flex; }
+  .nav-list a { padding: 14px 12px; }
+  .nav-list a[aria-current="page"] { box-shadow: inset 4px 0 0 var(--orange); border-radius: 0 8px 8px 0; }
+  .hero-grid { grid-template-columns: 1fr; padding-block: 48px 56px; }
+  .hero-plate { width: min(300px, 70%); justify-self: center; order: -1; }
+  .hero-photo { width: min(340px, 80%); justify-self: center; order: -1; }
+  .brand-logo { height: 44px; }
+  .detail-top, .two-up { grid-template-columns: 1fr; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .section { padding: 56px 0; }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 1rem; }
+  .search-bar { flex-direction: column; }
+  .search-bar .btn { width: 100%; }
+  .filter-grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .facts div { grid-template-columns: 1fr; gap: 0; }
+  .d-section { padding: 20px; }
+  .compare-bar { width: calc(100% - 28px); border-radius: 18px; flex-wrap: wrap; bottom: 12px; padding: 12px 14px; }
+  .compare-bar-text { flex-basis: 100%; white-space: normal; }
+  .back-top { bottom: 90px; right: 12px; }
+  .compare-table tbody th { width: 120px; }
+}

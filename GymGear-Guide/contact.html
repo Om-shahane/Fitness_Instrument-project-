@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact GymGear Guide</title>
+<meta name="description" content="Contact GymGear Guide with questions or suggestions about gym equipment information. Demonstration form with browser-side validation.">
+<meta name="theme-color" content="#000000">
+<!-- When your final domain is known, add: <link rel="canonical" href="https://YOUR-DOMAIN/THIS-PAGE.html"> -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="GymGear Guide home"><img class="brand-logo" src="assets/logo.png" alt="Infinity Fitness logo" width="248" height="176"></a>
+    <nav id="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="price-guide.html">Price Guide</a></li><li><a href="comparison.html">Compare</a></li><li><a href="articles.html">Learn</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container"><h1>Contact</h1><p>Questions or suggestions about the guide? Send a note using the form.</p></div></section>
+<section class="section">
+  <div class="container two-up">
+    <div>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field"><label for="c-name">Name</label>
+          <input id="c-name" name="name" type="text" autocomplete="name" aria-describedby="e-name" required>
+          <p class="error-msg" id="e-name" data-error-for="name"></p></div>
+        <div class="field"><label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" autocomplete="email" aria-describedby="e-email" required>
+          <p class="error-msg" id="e-email" data-error-for="email"></p></div>
+        <div class="field"><label for="c-subject">Subject</label>
+          <input id="c-subject" name="subject" type="text" aria-describedby="e-subject" required>
+          <p class="error-msg" id="e-subject" data-error-for="subject"></p></div>
+        <div class="field"><label for="c-message">Message</label>
+          <textarea id="c-message" name="message" aria-describedby="e-message" required></textarea>
+          <p class="error-msg" id="e-message" data-error-for="message"></p></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+    <aside class="panel">
+      <h2 style="font-size:1.3rem">Before you write</h2>
+      <p>This form is a demonstration. It checks your entries in the browser but has no backend, so nothing is emailed or stored until the site owner connects a form service.</p>
+      <p>Placeholder email: hello@gymgearguide.example</p>
+      <p>We cannot give personal medical or training advice.</p>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="brand" style="margin-bottom:.6em"><img class="brand-logo" src="assets/logo.png" alt="Infinity Fitness logo" width="248" height="176"></p>
+        <p>Your Complete Guide to Gym Equipment. Independent, educational information about gym instruments and approximate prices in India.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="equipment.html">All equipment</a></li>
+          <li><a href="price-guide.html">Price guide</a></li>
+          <li><a href="comparison.html">Compare equipment</a></li>
+          <li><a href="articles.html">Knowledge articles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="equipment.html?cat=cardio">Cardio equipment</a></li>
+          <li><a href="equipment.html?cat=strength">Strength machines</a></li>
+          <li><a href="equipment.html?cat=free-weights">Free weights</a></li>
+          <li><a href="equipment.html?cat=functional">Functional training</a></li>
+          <li><a href="equipment.html?cat=accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="contact.html">Contact form</a></li>
+          <li>Email: hello@gymgearguide.example</li>
+          <li><a href="about.html">About this site</a></li>
+        </ul>
+        <p class="fineprint" style="color:#bdbdbd">The email address above is a placeholder. Replace it with your own before publishing.</p>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>All prices are approximate ranges in Indian rupees and are not live market prices. Verify with current manufacturers or sellers.</p>
+      <p>Content is for general education, not medical or personal training advice. &copy; <span data-year>2026</span> GymGear Guide.</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-top" id="back-top" aria-label="Back to top">&uarr;</button>
+<script src="js/equipment-data.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

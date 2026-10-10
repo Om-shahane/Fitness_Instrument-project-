@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gym Equipment Directory: Uses, Muscles and Price in India | GymGear Guide</title>
+<meta name="description" content="Search gym equipment by name, category, muscle group, difficulty and approximate price in India. Compare cardio machines, strength machines, free weights and accessories.">
+<meta name="theme-color" content="#000000">
+<!-- When your final domain is known, add: <link rel="canonical" href="https://YOUR-DOMAIN/THIS-PAGE.html"> -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="GymGear Guide home"><img class="brand-logo" src="assets/logo.png" alt="Infinity Fitness logo" width="248" height="176"></a>
+    <nav id="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="equipment.html" aria-current="page">Equipment</a></li><li><a href="price-guide.html">Price Guide</a></li><li><a href="comparison.html">Compare</a></li><li><a href="articles.html">Learn</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container"><h1>Gym Equipment Directory</h1><p>Search and filter gym instruments by name, muscle, category, difficulty and approximate price in India.</p></div></section>
+<section class="section section-light">
+  <div class="container">
+    <form id="filter-form" class="filter-panel" role="search" aria-label="Filter equipment" novalidate>
+      <div class="filter-grid">
+        <div class="field field-search"><label for="q">Search equipment</label>
+          <input id="q" name="q" type="search" placeholder="Name, muscle or use" autocomplete="off"></div>
+        <div class="field"><label for="cat">Category</label>
+          <select id="cat" name="cat"><option value="">All categories</option></select></div>
+        <div class="field"><label for="price">Approximate price</label>
+          <select id="price" name="price">
+            <option value="">Any price</option>
+            <option value="0-5000">Up to &#8377;5,000</option>
+            <option value="5000-50000">&#8377;5,000 to &#8377;50,000</option>
+            <option value="50000-200000">&#8377;50,000 to &#8377;2,00,000</option>
+            <option value="200000-">Above &#8377;2,00,000</option>
+          </select></div>
+        <div class="field"><label for="level">Difficulty</label>
+          <select id="level" name="level"><option value="">All levels</option></select></div>
+        <div class="field"><label for="sort">Sort by</label>
+          <select id="sort" name="sort">
+            <option value="name-asc">Name: A to Z</option>
+            <option value="name-desc">Name: Z to A</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select></div>
+      </div>
+      <p class="hint">The price filter shows items that have options inside the chosen range. All prices are approximate.</p>
+      <div class="filter-foot">
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <button type="button" class="btn btn-ghost" id="filter-reset">Clear filters</button>
+      </div>
+    </form>
+    <div class="grid" id="results"><noscript><p>Equipment search needs JavaScript. You can still read the <a href="price-guide.html">price guide</a> and <a href="articles.html">articles</a>.</p></noscript></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="brand" style="margin-bottom:.6em"><img class="brand-logo" src="assets/logo.png" alt="Infinity Fitness logo" width="248" height="176"></p>
+        <p>Your Complete Guide to Gym Equipment. Independent, educational information about gym instruments and approximate prices in India.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="equipment.html">All equipment</a></li>
+          <li><a href="price-guide.html">Price guide</a></li>
+          <li><a href="comparison.html">Compare equipment</a></li>
+          <li><a href="articles.html">Knowledge articles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="equipment.html?cat=cardio">Cardio equipment</a></li>
+          <li><a href="equipment.html?cat=strength">Strength machines</a></li>
+          <li><a href="equipment.html?cat=free-weights">Free weights</a></li>
+          <li><a href="equipment.html?cat=functional">Functional training</a></li>
+          <li><a href="equipment.html?cat=accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="contact.html">Contact form</a></li>
+          <li>Email: hello@gymgearguide.example</li>
+          <li><a href="about.html">About this site</a></li>
+        </ul>
+        <p class="fineprint" style="color:#bdbdbd">The email address above is a placeholder. Replace it with your own before publishing.</p>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>All prices are approximate ranges in Indian rupees and are not live market prices. Verify with current manufacturers or sellers.</p>
+      <p>Content is for general education, not medical or personal training advice. &copy; <span data-year>2026</span> GymGear Guide.</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-top" id="back-top" aria-label="Back to top">&uarr;</button>
+<script src="js/equipment-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/search-filter.js"></script>
+</body>
+</html>
